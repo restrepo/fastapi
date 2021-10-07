@@ -6,7 +6,7 @@ $ pip install uvicorn[standard]
 $ uvicorn main:app --reload
 ```
 check for
-*  http://127.0.0.1:8000/
-*  http://127.0.0.1:8000/?item_id=6
-*  http://127.0.0.1:8000/?item_id=6&value=1
+* Full JSON: http://127.0.0.1:8000/
+* Filtered item: http://127.0.0.1:8000/?item_id=6
+* Filtered item: http://127.0.0.1:8000/?item_id=6&value=1
 
