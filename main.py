@@ -30,12 +30,12 @@ def read_root():
 @app.get("/")
 def read_item(item_id: int = -1,value: int =-1):
     if item_id==-1:
-    	return db
+        return db
     else:
         if value==-1:
-	return [ d for d in db if  ]
-
-#        return [ d for d in db if d.get("item_id")==item_id ] #{"item_id": item_id, "q": q}
+            return [ d for d in db if d.get('item_id')==item_id ]
+        else:
+            return [ d for d in db if d.get('item_id')==item_id and d.get("value")==value ]
 
 
 @app.get("/items/{item_id}")
